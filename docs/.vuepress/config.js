@@ -1,17 +1,15 @@
 module.exports = {
     title: '开发手册',
     description: '',
-    base: '/handbook',
+    base: '/handbook/',
 
     themeConfig: {
         docsDir: 'docs',
         sidebar: true,
-        search: false,
+        search: true,
         lastUpdated: 'Last Updated', // string | boolean
 
-        nav: [
-            { text: 'Resume', link: 'https://github.com/dodosss' },
-            {
+        nav: [{
                 text: 'Quick',
                 items: [
                     { text: 'Mac', link: '/mac' },
