@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>服务器配置文件 | 开发手册</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/handbook/assets/css/0.styles.627c5f2f.css" as="style"><link rel="preload" href="/handbook/assets/js/app.ace9e2a6.js" as="script"><link rel="preload" href="/handbook/assets/js/6.0bc2bde5.js" as="script"><link rel="prefetch" href="/handbook/assets/js/10.885b55a2.js"><link rel="prefetch" href="/handbook/assets/js/2.00d0eedf.js"><link rel="prefetch" href="/handbook/assets/js/3.8e348b46.js"><link rel="prefetch" href="/handbook/assets/js/4.367d96fd.js"><link rel="prefetch" href="/handbook/assets/js/5.ce38846c.js"><link rel="prefetch" href="/handbook/assets/js/7.0ec8d9e0.js"><link rel="prefetch" href="/handbook/assets/js/8.2ba78066.js"><link rel="prefetch" href="/handbook/assets/js/9.ae452341.js">
+    <link rel="stylesheet" href="/handbook/assets/css/0.styles.627c5f2f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/handbook/" class="home-link router-link-active"><!----> <span class="site-name">开发手册</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/dodosss" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Resume
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Quick</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/handbook/mac.html" class="nav-link">Mac</a></li><li class="dropdown-item"><!----> <a href="/handbook/vscode.html" class="nav-link">VSCode</a></li><li class="dropdown-item"><!----> <a href="/handbook/chrome.html" class="nav-link">Chrome</a></li><li class="dropdown-item"><!----> <a href="/handbook/androidstudio.html" class="nav-link">Android Studio</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">CentOS</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/handbook/lnmp.html" class="nav-link router-link-exact-active router-link-active">lnmp</a></li><li class="dropdown-item"><!----> <a href="/handbook/server.html" class="nav-link">server</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dodosss" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/dodosss" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Resume
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Quick</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/handbook/mac.html" class="nav-link">Mac</a></li><li class="dropdown-item"><!----> <a href="/handbook/vscode.html" class="nav-link">VSCode</a></li><li class="dropdown-item"><!----> <a href="/handbook/chrome.html" class="nav-link">Chrome</a></li><li class="dropdown-item"><!----> <a href="/handbook/androidstudio.html" class="nav-link">Android Studio</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">CentOS</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/handbook/lnmp.html" class="nav-link router-link-exact-active router-link-active">lnmp</a></li><li class="dropdown-item"><!----> <a href="/handbook/server.html" class="nav-link">server</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dodosss" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="服务器配置文件"><a href="#服务器配置文件" aria-hidden="true" class="header-anchor">#</a> 服务器配置文件</h1> <h3 id="修订历史"><a href="#修订历史" aria-hidden="true" class="header-anchor">#</a> 修订历史</h3> <table><thead><tr><th>时间</th> <th>版本</th> <th>修订人</th> <th>内容</th></tr></thead> <tbody><tr><td>2018-05-05</td> <td>v1.0.0</td> <td>dodo</td> <td>本地虚拟机centos最少安装后lnmp配置</td></tr></tbody></table> <h2 id="目录"><a href="#目录" aria-hidden="true" class="header-anchor">#</a> 目录</h2> <ul><li><a href="#1.1">1.1 PHP7.0.2</a> <ul><li><a href="#1.1.1">1.1.1 swoole扩展</a></li></ul></li> <li><a href="#1.2">1.2 Nginx1.13.12</a> <ul><li><a href="#1.2.1">1.2.1 Nginx Auth Basic</a></li></ul></li> <li><a href="#1.3">1.3 MySQL5.6.22</a> <ul><li><a href="#1.3.1">1.3.1 同一服务器多个MySQL实例</a></li> <li><a href="#1.3.2">1.3.2 MySQL主从复制</a> TODO:互为主从实践/从机切换为主的操作</li></ul></li> <li><a href="#1.4">1.4 Redis</a></li></ul> <div class="language-shell extra-class"><pre class="language-text"><code># 系统版本
+[root@iZwz9380y7iwd3pobeca5bZ ~]# cat /etc/redhat-release
+CentOS release 6.9 (Final)
+[root@iZwz9380y7iwd3pobeca5bZ ~]# uname -a
+Linux iZwz9380y7iwd3pobeca5bZ 2.6.32-696.16.1.el6.x86_64 #1 SMP Wed Nov 15 16:51:15 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code># 查看编译参数
+/usr/local/php/bin/php -i |grep configure
+/usr/local/nginx/sbin/nginx -V
+cat &quot;/usr/local/mysql/bin/mysqlbug&quot; | grep configure
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code># 配置文件路径
+/usr/local/php/bin/php --ini
+echo '&lt;?php phpinfo(); ?&gt;' | /usr/local/php/bin/php 2&gt;&amp;1 | grep php.ini # 推荐
+whereis my.cnf # 推荐
+find / -name my.cnf
+mysql --help | grep my.cnf
+/usr/local/opt/nginx/bin/nginx -t
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code># 初始环境目录
+mkdir -p /var/www/html
+mkdir -p /usr/local
+mkdir -p /opt/soft
+mkdir -p /data/mysql/mysqldata
+mkdir -p /data/server/shell
+mkdir -p /data/backup/mysql
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code>/var/www/html/
+            phpMyAdmin      &lt;-----------------phpMyAdmin
+            your-project    &lt;-----------------项目
+            your-project2
+
+/usr/local/
+            mysql           &lt;-----------------自编译软件
+            nginx
+
+/opt/
+    soft                    &lt;-----------------软件资料
+
+
+/data/
+    mysql/mysqldata         &lt;-----------------数据库文件
+    server/shell            &lt;-----------------shell脚本
+    backup/mysql            &lt;-----------------mysql备份
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/9/2019, 11:49:04 PM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/handbook/assets/js/app.ace9e2a6.js" defer></script><script src="/handbook/assets/js/6.0bc2bde5.js" defer></script>
+  </body>
+</html>
